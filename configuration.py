@@ -6,7 +6,7 @@ import os
 load_dotenv()
 
 
-mongodb_uri = os.getenv("MONGODB_URI")
+mongodb_uri = os.getenv("DATABASE_URL")
 
 client = MongoClient(mongodb_uri, server_api=ServerApi('1'))
 
